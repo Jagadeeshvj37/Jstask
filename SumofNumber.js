@@ -1,4 +1,4 @@
-var num=[2,24,8,94,95,7,4]
+var num=[2,24,8,94,95,7,4,1000]
 
 // using reduce method
 
