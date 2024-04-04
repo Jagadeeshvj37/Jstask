@@ -27,7 +27,7 @@ function countDuplicates(arr) {
   }
   
   // Example usage
-  const array = [3, 2, 3, 4, 5,0,-1, 1, 2, 3, 1, 4, 4];
+  const array = [3, 2, 3, 4, 5,0,-1, 1, 2, 3, 1, 4, 4,3];
   const duplicateCounts = countDuplicates(array);
   console.log(duplicateCounts);
   
