@@ -12,7 +12,7 @@ function countDuplicates(arr) {
         counts[item]++;
       }
     });
-    console.log("Duplicate count:"+counts)
+    // console.log("Duplicate count:"+counts[arr])
     // Create an array to store the duplicate values
     const duplicates = [];
     
@@ -20,7 +20,7 @@ function countDuplicates(arr) {
     for (const key in counts) {
       // If the count for a value is greater than 1, it's a duplicate
       if (counts[key] > 1) {
-        duplicates.push({ value: key, count: counts[key] });
+        duplicates.push({ value: key, count: counts[key] });  // key , value
       }
     }
     return duplicates;
@@ -31,3 +31,33 @@ function countDuplicates(arr) {
   const duplicateCounts = countDuplicates(array);
   console.log(duplicateCounts);
   
+
+  // Practice 
+
+  // Duplicate Values with their count
+
+  var arr=[1,2,5,2,3,2,3,3,1,4,4,7];
+
+  var obj={};
+
+  var kanaku=0;
+
+  arr.forEach(summa=>{
+    if(!obj[summa])
+    {
+      obj[summa]=1;
+    }
+    else{
+      obj[summa]++;
+    }
+  })
+
+  var summaarray=[];
+
+  for(var saavi in obj)
+  {
+    if(obj[saavi]>0)
+      summaarray.push({key : saavi, value : obj[saavi]})
+  }
+
+  console.log(summaarray);
